@@ -1,6 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_balcoder_fb/ui/home_page.dart';
+import 'package:flutter_balcoder_fb/ui/home/home_page.dart';
 
 void main() {
   Firebase.initializeApp(
@@ -23,6 +23,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
